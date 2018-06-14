@@ -1,0 +1,197 @@
+html {
+    box-sizing: border-box;
+    background:url('https://myplace.cafe/wp-content/uploads/2017/03/%D0%BF%D0%B8%D1%86%D1%86%D0%B0-%D0%B2%D0%B5%D0%B3%D0%B5%D1%82%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-1024x683.jpg') center no-repeat;
+    background-size:cover;
+    min-height:100vh;
+    font-family: Futura,"Trebuchet MS",Arial,sans-serif
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+svg {
+    fill:white;
+    background: rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 50%;
+    width:200px;
+    margin-bottom: 50px;
+}
+
+
+.wrapper {
+    margin-left: 40%;
+    margin-top: 10%;
+    padding: 20px;
+    max-width: 350px;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+}
+
+.plates {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+
+.plates li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+}
+
+.plates label {
+    flex: 1;
+    cursor: pointer;
+
+}
+
+.plates .checkbox {
+    display: none;
+}
+
+.plates input + label:before {
+    content: '⬜';
+    margin-left: 3%;
+
+}
+
+.plates input:checked + label:before {
+    margin-top: 5px;
+    content: '\2713';
+    color: green;
+}
+
+.add-items input:required {
+    background-color: #f1f1f1;
+}
+
+.add-items {
+    margin-top: 20px;
+}
+
+.add-items input {
+    padding:10px;
+    outline:0;
+    border:2px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+
+.edit{
+
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-top: 1.5%;
+    margin-right: 1.7%;
+}
+.save {
+    display: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-top: 1.5%;
+    margin-right: 1.7%;
+}
+.saveDefault{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-top: 1.5%;
+    margin-right: 1.7%;
+}
+
+
+.close {
+    margin-top: 1.5%;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+
+
+.editInput{
+    display: none;
+    position: absolute;
+    padding-left: 1%;
+    outline:0;
+    border:2px solid rgba(0,0,0,0.1);
+    border-radius: 7px;
+    background-color: #f1f1f1;
+
+}
+
+.getNews{
+    -moz-box-shadow: inset 0 0 0 1px #63ad0d;
+    -webkit-box-shadow: inset 0 0 0 1px #63ad0d;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #eee;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eee), to(#e2e2e2));
+    background: -moz-linear-gradient(#eee, #e2e2e2);
+    background: linear-gradient(#eee, #e2e2e2);
+    border: solid 1px #d0d0d0;
+    border-bottom: solid 3px #b2b1b1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px #f5f5f5;
+    color: #555;
+    font: bold 12px Arial, Helvetica, Clean, sans-serif;
+    margin-left: 46%;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fafafa;
+    cursor: pointer;
+
+}
+.getNews:hover {
+    background: #e4e4e4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e4e4e4), to(#ededed));
+    background: -moz-linear-gradient(#e4e4e4, #ededed);
+    background: linear-gradient(#e4e4e4, #ededed);
+    border: solid 1px #c2c2c2;
+    border-bottom: solid 3px #b2b1b1;
+    box-shadow: inset 0 0 0 1px #efefef;
+}
+.getNews:active {
+    background: #dfdfdf;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dfdfdf), to(#e3e3e3));
+    background: -moz-linear-gradient(#dfdfdf, #e3e3e3);
+    background: linear-gradient(#dfdfdf, #e3e3e3);
+    box-shadow: inset 0 10px 15px 0 #c4c4c4;
+    top:2px;
+}
+
+.foodHeaders{
+    font-size: large;
+    height: auto;
+    list-style-type: none;
+    text-align: left;
+    font-family: 'sans-serif';
+
+
+}
+.foodNews{
+    margin-right: 2%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    border: rgba(0,0,0,0.2);
+    background: #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    width: 430px;
+    margin-left: 38.3%;
+
+}

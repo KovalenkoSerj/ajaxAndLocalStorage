@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='wrapper'>
+        <h2>Local Tapas</h2>
+        <p></p>
+        <ul class ='plates'>
+            <li>Loading Tapas ...</li>
+        </ul>
+        <form class ='add-items'>
+            <input type="text" name="item" placeholder="Items Name" required maxlength="20">
+            <input class ='submit' type="submit" value="+ Add Item">
+        </form>
+    </div>
+
+    <div class="foodNews">
+        <ul class="foodHeaders">
+        </ul>
+    </div>
+    <div>
+    <button type="submit" class="getNews">Get news </button>
+    </div>
+    <script src='requestAndFilterData.js'></script>
+    <script src="addRemoveSaveEditFunctions.js"></script>
+    <script src='viewToggleEventListeners.js'></script>
+    
+</body>
+</html>
