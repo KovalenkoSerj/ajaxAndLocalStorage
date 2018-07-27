@@ -1,6 +1,22 @@
+function addItem(e) {
+    e.preventDefault();
+    var text = (this.querySelector('[name=item]')).value,
+        item = {
+            text,
+            done: false
+        };
+    items.push(item);
+    localStorage.setItem('items', JSON.stringify(items));
+    
+    this.reset();
+}
+
+
+
 function removeItem (e) {
     items.splice(e.target.dataset.index,1);
-    updateView(items, itemsList);
+    localStorage.setItem('items', JSON.stringify(items));
+    populateList(items, itemsList);
 }
 
 
@@ -36,14 +52,3 @@ function saveItem(e) {
 }
 
 
-function addItem(e) {
-    e.preventDefault();
-    var text = (this.querySelector('[name=item]')).value,
-        item = {
-            text,
-            done: false
-        };
-    items.push(item);
-    updateView(items, itemsList);
-    this.reset();
-}
